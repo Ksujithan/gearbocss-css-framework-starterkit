@@ -1,0 +1,17 @@
+{
+  "name": "gearbocss",
+  "version": "2.0.0",
+  "description": "css flexbox framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss/gearbocss.scss:assets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Ksujithan@bitbucket.org/Ksujithan/gearbocss.git"
+  },
+  "author": "Ksujithan",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/Ksujithan/gearbocss#readme"
+}

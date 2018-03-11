@@ -1,0 +1,19 @@
+footer {
+  bottom: 0;
+  height: auto;
+  background-color: $primary-color;
+  color: $background-color;
+  width: 100%;
+  padding: 1.25rem 0 1.25rem 0;
+}
+
+.references {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.copyright {
+  padding-top: 1.25rem;
+  border-top: 1px solid $background-color;
+  text-align: center;
+}

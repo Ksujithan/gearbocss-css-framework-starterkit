@@ -1,0 +1,476 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-width: $small-size - 15px;
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+@mixin flexbox {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.box {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  flex: 1;
+  display: block;
+  max-width: 100%;
+
+  &.one {
+    flex: none;
+    width: $box-size-1;
+  }
+
+  &.two {
+    flex: none;
+    width: $box-size-2;
+  }
+
+  &.three {
+    flex: none;
+    width: $box-size-3;
+  }
+
+  &.four {
+    flex: none;
+    width: $box-size-4;
+  }
+
+  &.five {
+    flex: none;
+    width: $box-size-5;
+  }
+
+  &.six {
+    flex: none;
+    width: $box-size-6;
+  }
+
+  &.seven {
+    flex: none;
+    width: $box-size-7;
+  }
+
+  &.eight {
+    flex: none;
+    width: $box-size-8;
+  }
+
+  &.nine {
+    flex: none;
+    width: $box-size-9;
+  }
+
+  &.ten {
+    flex: none;
+    width: $box-size-10;
+  }
+
+  &.eleven {
+    flex: none;
+    width: $box-size-11;
+  }
+
+  &.twelve {
+    width: $box-size-12;
+  }
+}
+
+.xs1 {
+  @include flexbox;
+  flex-basis: $box-size-1;
+  max-width: $box-size-1;
+}
+
+.xs2 {
+  @include flexbox;
+  flex-basis: $box-size-2;
+  max-width: $box-size-2;
+}
+
+.xs3 {
+  @include flexbox;
+  flex-basis: $box-size-3;
+  max-width: $box-size-3;
+}
+
+.xs4 {
+  @include flexbox;
+  flex-basis: $box-size-4;
+  max-width: $box-size-4;
+}
+
+.xs5 {
+  @include flexbox;
+  flex-basis: $box-size-5;
+  max-width: $box-size-5;
+}
+
+.xs6 {
+  @include flexbox;
+  flex-basis: $box-size-6;
+  max-width: $box-size-6;
+}
+
+.xs7 {
+  @include flexbox;
+  flex-basis: $box-size-7;
+  max-width: $box-size-7;
+}
+
+.xs8 {
+  @include flexbox;
+  flex-basis: $box-size-8;
+  max-width: $box-size-8;
+}
+
+.xs9 {
+  @include flexbox;
+  flex-basis: $box-size-9;
+  max-width: $box-size-9;
+}
+
+.xs10 {
+  @include flexbox;
+  flex-basis: $box-size-10;
+  max-width: $box-size-10;
+}
+
+.xs11 {
+  @include flexbox;
+  flex-basis: $box-size-11;
+  max-width: $box-size-11;
+}
+
+.xs12 {
+  @include flexbox;
+  flex-basis: $box-size-12;
+  max-width: $box-size-12;
+}
+
+@media (min-width: $small-size) {
+  .container {
+    max-width: $small-size - 15px;
+  }
+
+  .s1 {
+    @include flexbox;
+    flex-basis: $box-size-1;
+    max-width: $box-size-1;
+  }
+
+  .s2 {
+    @include flexbox;
+    flex-basis: $box-size-2;
+    max-width: $box-size-2;
+  }
+
+  .s3 {
+    @include flexbox;
+    flex-basis: $box-size-3;
+    max-width: $box-size-3;
+  }
+
+  .s4 {
+    @include flexbox;
+    flex-basis: $box-size-4;
+    max-width: $box-size-4;
+  }
+
+  .s5 {
+    @include flexbox;
+    flex-basis: $box-size-5;
+    max-width: $box-size-5;
+  }
+
+  .s6 {
+    @include flexbox;
+    flex-basis: $box-size-6;
+    max-width: $box-size-6;
+  }
+
+  .s7 {
+    @include flexbox;
+    flex-basis: $box-size-7;
+    max-width: $box-size-7;
+  }
+
+  .s8 {
+    @include flexbox;
+    flex-basis: $box-size-8;
+    max-width: $box-size-8;
+  }
+
+  .s9 {
+    @include flexbox;
+    flex-basis: $box-size-9;
+    max-width: $box-size-9;
+  }
+
+  .s10 {
+    @include flexbox;
+    flex-basis: $box-size-10;
+    max-width: $box-size-10;
+  }
+
+  .s11 {
+    @include flexbox;
+    flex-basis: $box-size-11;
+    max-width: $box-size-11;
+  }
+
+  .s12 {
+    @include flexbox;
+    flex-basis: $box-size-12;
+    max-width: $box-size-12;
+  }
+}
+
+@media (min-width: $medium-size) {
+  .container {
+    max-width: $medium-size - 30px;
+  }
+
+  .m1 {
+    @include flexbox;
+    flex-basis: $box-size-1;
+    max-width: $box-size-1;
+  }
+
+  .m2 {
+    @include flexbox;
+    flex-basis: $box-size-2;
+    max-width: $box-size-2;
+  }
+
+  .m3 {
+    @include flexbox;
+    flex-basis: $box-size-3;
+    max-width: $box-size-3;
+  }
+
+  .m4 {
+    @include flexbox;
+    flex-basis: $box-size-4;
+    max-width: $box-size-4;
+  }
+
+  .m5 {
+    @include flexbox;
+    flex-basis: $box-size-5;
+    max-width: $box-size-5;
+  }
+
+  .m6 {
+    @include flexbox;
+    flex-basis: $box-size-6;
+    max-width: $box-size-6;
+  }
+
+  .m7 {
+    @include flexbox;
+    flex-basis: $box-size-7;
+    max-width: $box-size-7;
+  }
+
+  .m8 {
+    @include flexbox;
+    flex-basis: $box-size-8;
+    max-width: $box-size-8;
+  }
+
+  .m9 {
+    @include flexbox;
+    flex-basis: $box-size-9;
+    max-width: $box-size-9;
+  }
+
+  .m10 {
+    @include flexbox;
+    flex-basis: $box-size-10;
+    max-width: $box-size-10;
+  }
+
+  .m11 {
+    @include flexbox;
+    flex-basis: $box-size-11;
+    max-width: $box-size-11;
+  }
+
+  .m12 {
+    @include flexbox;
+    flex-basis: $box-size-12;
+    max-width: $box-size-12;
+  }
+}
+
+@media (min-width: $large-size) {
+  .container {
+    max-width: $large-size - 30px;
+  }
+
+  .lg1 {
+    @include flexbox;
+    flex-basis: $box-size-1;
+    max-width: $box-size-1;
+  }
+
+  .lg2 {
+    @include flexbox;
+    flex-basis: $box-size-2;
+    max-width: $box-size-2;
+  }
+
+  .lg3 {
+    @include flexbox;
+    flex-basis: $box-size-3;
+    max-width: $box-size-3;
+  }
+
+  .lg4 {
+    @include flexbox;
+    flex-basis: $box-size-4;
+    max-width: $box-size-4;
+  }
+
+  .lg5 {
+    @include flexbox;
+    flex-basis: $box-size-5;
+    max-width: $box-size-5;
+  }
+
+  .lg6 {
+    @include flexbox;
+    flex-basis: $box-size-6;
+    max-width: $box-size-6;
+  }
+
+  .lg7 {
+    @include flexbox;
+    flex-basis: $box-size-7;
+    max-width: $box-size-7;
+  }
+
+  .lg8 {
+    @include flexbox;
+    flex-basis: $box-size-8;
+    max-width: $box-size-8;
+  }
+
+  .lg9 {
+    @include flexbox;
+    flex-basis: $box-size-9;
+    max-width: $box-size-9;
+  }
+
+  .lg10 {
+    @include flexbox;
+    flex-basis: $box-size-10;
+    max-width: $box-size-10;
+  }
+
+  .lg11 {
+    @include flexbox;
+    flex-basis: $box-size-11;
+    max-width: $box-size-11;
+  }
+
+  .lg12 {
+    @include flexbox;
+    flex-basis: $box-size-12;
+    max-width: $box-size-12;
+  }
+}
+
+@media (min-width: $extra-large-size) {
+  .container {
+    max-width: $extra-large-size - 30px;
+  }
+
+  .xl1 {
+    @include flexbox;
+    flex-basis: $box-size-1;
+    max-width: $box-size-1;
+  }
+
+  .xl2 {
+    @include flexbox;
+    flex-basis: $box-size-2;
+    max-width: $box-size-2;
+  }
+
+  .xl3 {
+    @include flexbox;
+    flex-basis: $box-size-3;
+    max-width: $box-size-3;
+  }
+
+  .xl4 {
+    @include flexbox;
+    flex-basis: $box-size-4;
+    max-width: $box-size-4;
+  }
+
+  .xl5 {
+    @include flexbox;
+    flex-basis: $box-size-5;
+    max-width: $box-size-5;
+  }
+
+  .xl6 {
+    @include flexbox;
+    flex-basis: $box-size-6;
+    max-width: $box-size-6;
+  }
+
+  .xl7 {
+    @include flexbox;
+    flex-basis: $box-size-7;
+    max-width: $box-size-7;
+  }
+
+  .xl8 {
+    @include flexbox;
+    flex-basis: $box-size-8;
+    max-width: $box-size-8;
+  }
+
+  .xl9 {
+    @include flexbox;
+    flex-basis: $box-size-9;
+    max-width: $box-size-9;
+  }
+
+  .xl10 {
+    @include flexbox;
+    flex-basis: $box-size-10;
+    max-width: $box-size-10;
+  }
+
+  .xl11 {
+    @include flexbox;
+    flex-basis: $box-size-11;
+    max-width: $box-size-11;
+  }
+
+  .xl12 {
+    @include flexbox;
+    flex-basis: $box-size-12;
+    max-width: $box-size-12;
+  }
+
+}

@@ -1,0 +1,45 @@
+.dropbtn {
+  background-color: $primary-color;
+  color: $background-color;
+  border: 1px solid $background-color;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $primary-color;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 0.5rem 0.5rem;
+  border-radius: $border-radius;
+}
+
+.dropdown-content a {
+  color: $background-color;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;
+  border-radius: $border-radius;
+}
+
+.dropdown-content a:hover {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: $primary-color;
+}

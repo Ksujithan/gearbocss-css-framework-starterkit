@@ -1,0 +1,65 @@
+.adap-table {
+  margin: 1rem 0;
+  min-width: 300px;
+  background: $primary-color;
+  color: $background-color;
+  border-radius: 4px;
+  overflow: hidden;
+  border-spacing: 0;
+
+  th {
+    display: none;
+    margin: 0.5rem 1rem;
+    border-bottom: 2px groove $background-color;
+    @media (min-width: $medium-size) {
+      padding: 1rem !important;
+    }
+  }
+
+  td {
+    display: block;
+    margin: 0.5rem 1rem;
+    border-bottom: 1px solid transparent;
+    border-collapse: collapse;
+    @media (min-width: $medium-size) {
+      padding: 1rem !important;
+      border-bottom: 1px solid $background-color;
+    }
+
+    &:first-child {
+      padding-top: 0.5em;
+    }
+
+    &:last-child {
+      padding-bottom: 0.5em;
+    }
+
+    &:before {
+      content: attr(data-th)": ";
+      font-weight: bold;
+      width: 6.5em;
+      display: inline-block;
+
+      @media (min-width: $medium-size) {
+        display: none;
+      }
+    }
+  }
+
+  th, td {
+    text-align: left;
+
+    @media (min-width: $medium-size) {
+      display: table-cell;
+      padding: 0.25em 0.5em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+//W3C
+
+.accordion {
+  background-color: $background-color;
+  color: $primary-color;
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid $primary-color;
+  margin-top: 4px;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: $primary-color;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 1rem;
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  border-top: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

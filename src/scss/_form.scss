@@ -1,0 +1,195 @@
+input {
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  padding: 0.625rem 1.25rem;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $background-color;
+}
+
+[type=text],[type=textarea],[type=email],[type=password],[type=date],[type=time],[type=number],[type=search] {
+  position: relative;
+  padding: 20px 0px 5px 0px;
+  transition: all 1s;
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  outline: none;
+  margin-bottom: 20px;
+  width: 100%;
+
+  + label {
+    transition: all 0.5s;
+    // position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    color: $text-color;
+  }
+
+  &:focus + label {
+    opacity: 1;
+    top: 2px;
+    font-size: 0.625rem;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    outline: none;
+    transition: all 0.5s;
+  }
+
+  &:focus::placeholder {
+    outline: none;
+    color: transparent;
+    transition: all 0.5s;
+  }
+
+}
+
+[type="textarea"], textarea {
+  width: 100%;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: $text-color;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $secondary-color;
+    border-radius: 100%;
+    background: $background-color;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $primary-color;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    transition: all .2s;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  color: $text-color;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  font-size: 1rem;
+  color: green;
+  transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[type="submit"] {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: $border-radius;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  background-color: $background-color;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+      border: 1px solid $background-color;
+      color: $background-color;
+      background-color: $primary-color;
+  }
+
+}
+
+select {
+  background-color: $background-color;
+  color: $primary-color;
+  outline: none;
+  border: 1px solid $secondary-color;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+
+  option {
+    background-color: $background-color;
+    color: $primary-color;
+  }
+
+}

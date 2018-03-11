@@ -1,0 +1,78 @@
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.a-few-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.color-primary {
+  color: $primary-color;
+}
+
+.color-secondary {
+  color: $secondary-color;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: $small-size) {
+  .hide-s {
+    display: none;
+  }
+  .show-s {
+    display: none;
+  }
+}
+
+@media (min-width: $medium-size) {
+  .hide-m {
+    display: none;
+  }
+  .show-m {
+    display: none;
+  }
+}
+
+@media (min-width: $large-size) {
+  .hide-lg {
+    display: none;
+  }
+  .show-lg {
+    display: none;
+  }
+}
+
+@media (min-width: $extra-large-size) {
+  .hide-xl {
+    display: none;
+  }
+  .show-xl {
+    display: none;
+  }
+}
